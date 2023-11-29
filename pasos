@@ -1,0 +1,32 @@
+1) acceder a la carpeta del proyecto desde la terminal
+
+
+
+2)
+
+
+Ejecucion SECUENCIAL
+
+
+    1.       make bin/programa_secuencial
+
+
+
+    2.      ./bin/programa_secuencial img/foto.jpg img/foto_gris.jpg
+
+
+Ejecucion PARALELA THREAD
+
+
+    1.      make bin/programa_paralelo_thread
+
+    2.      ./bin/programa_paralelo_thread img/foto.jpg img/foto_gris_thread.jpg
+
+Ejecucion PARALELA OPENMP
+
+    1.      make bin/programa_paralelo_openmp
+
+    2.      ./bin/programa_paralelo_openmp img/foto.jpg img/foto_gris_openmp.jpg
+
+
+//make clean para eliminar los archivos bin
