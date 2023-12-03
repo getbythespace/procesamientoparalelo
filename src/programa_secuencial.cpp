@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-// Función para convertir una imagen a escala de grises usando el método de luminosidad
+
 void convertToGrayscale(const cv::Mat& input, cv::Mat& output) {
     output = cv::Mat(input.size(), CV_8UC1);
 
@@ -25,20 +25,20 @@ int main(int argc, char** argv) {
     std::string inputFile = argv[1];
     std::string outputFile = argv[2];
 
-    // Cargar la imagen
+  
     cv::Mat image = cv::imread(inputFile, cv::IMREAD_COLOR);
     if (image.empty()) {
         std::cerr << "Error al abrir la imagen: " << inputFile << "\n";
         return 1;
     }
 
-    // Crear una matriz para la imagen en escala de grises
+   
     cv::Mat grayImage;
 
-    // Convertir la imagen a escala de grises
+
     convertToGrayscale(image, grayImage);
 
-    // Guardar la imagen procesada
+
     if (!cv::imwrite(outputFile, grayImage)) {
         std::cerr << "Error al guardar la imagen: " << outputFile << "\n";
         return 1;
@@ -46,5 +46,6 @@ int main(int argc, char** argv) {
 
     return 0;
 }
+
 
 

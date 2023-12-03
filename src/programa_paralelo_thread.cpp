@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
 
     cv::Mat grayImage(image.size(), CV_8UC1);
 
-    const int numThreads = 4;  // Ajusta este número según el número de hilos que desees utilizar
+    const int numThreads = 4;  
     std::vector<std::thread> threads(numThreads);
 
     int rowsPerThread = image.rows / numThreads;
